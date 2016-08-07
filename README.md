@@ -2,6 +2,8 @@
 
 Store alert messages in the session.
 
+[![Build Status](https://travis-ci.org/SidRoberts/flash.svg?branch=master)](https://travis-ci.org/SidRoberts/flash)
+
 
 
 ## Installation
