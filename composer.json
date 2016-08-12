@@ -35,6 +35,10 @@
         "phpunit/php-code-coverage": "~3.0"
     },
 
+    "suggest": {
+        "twig/twig": "To use the Twig extension."
+    },
+
 
 
     "autoload": {
