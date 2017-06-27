@@ -10,8 +10,12 @@ class Html implements FormatterInterface
 {
     public function output(string $level, string $message) : string
     {
-        $cssClass = "alert alert-" . $level;
+        $html = sprintf(
+            "<div class=\"alert alert-%s\">%s</div>",
+            $level,
+            $message
+        );
 
-        return "<div class=\"" . $cssClass . "\">" . $message . "</div>";
+        return $html;
     }
 }

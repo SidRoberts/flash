@@ -8,6 +8,10 @@ class Text implements FormatterInterface
 {
     public function output(string $level, string $message) : string
     {
-        return "[" . strtoupper($level) . "] " . $message;
+        return sprintf(
+            "[%s] %s",
+            strtoupper($level),
+            $message
+        );
     }
 }
