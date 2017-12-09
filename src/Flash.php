@@ -6,7 +6,7 @@ use Sid\Flash\FormatterInterface;
 
 use Symfony\Component\HttpFoundation\Session\Session;
 
-class Flash
+class Flash implements FlashInterface
 {
     /**
      * @var Session
