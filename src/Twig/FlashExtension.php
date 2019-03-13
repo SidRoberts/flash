@@ -3,10 +3,10 @@
 namespace Sid\Flash\Twig;
 
 use Sid\Flash\Flash;
-use Twig_Extension;
-use Twig_SimpleFunction;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 
-class FlashExtension extends Twig_Extension
+class FlashExtension extends AbstractExtension
 {
     /**
      * @var Flash
@@ -25,7 +25,7 @@ class FlashExtension extends Twig_Extension
     public function getFunctions()
     {
         return [
-            new Twig_SimpleFunction(
+            new TwigFunction(
                 "flash",
                 function () : string {
                     return $this->flash->output();

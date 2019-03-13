@@ -2,15 +2,16 @@
 
 namespace Sid\Flash\Test\Unit\Twig;
 
+use Codeception\TestCase\Test;
+
 use Sid\Flash\Flash;
 use Sid\Flash\Twig\FlashExtension;
 
-use Twig_Loader_Array;
-use Twig_Environment;
-
 use Symfony\Component\HttpFoundation\Session\Session;
 
-class FlashExtensionTest extends \Codeception\TestCase\Test
+use Twig\Loader\ArrayLoader;
+
+class FlashExtensionTest extends Test
 {
     public function testExtension()
     {
@@ -29,13 +30,13 @@ class FlashExtensionTest extends \Codeception\TestCase\Test
 
 
 
-        $loader = new Twig_Loader_Array(
+        $loader = new ArrayLoader(
             [
                 "template" => "{{ flash()|raw }}",
             ]
         );
 
-        $twig = new Twig_Environment(
+        $twig = new \Twig\Environment(
             $loader
         );
 
