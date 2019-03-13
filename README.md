@@ -44,16 +44,16 @@ echo $flash->output();
 ### Formatters
 
 Formatters determine how messages are outputted. To create your own you must
-implement the `\Sid\Flash\FormatterInterface` interface. Currently, there are
-two formatters:
+implement [`\Sid\Flash\FormatterInterface`](https://github.com/SidRoberts/flash/blob/master/src/FormatterInterface.php).
+Currently, there are two formatters:
 
-#### `\Sid\Flash\Formatter\HtmlFormatter`
+#### [`\Sid\Flash\Formatter\HtmlFormatter`](https://github.com/SidRoberts/flash/blob/master/src/Formatter/HtmlFormatter.php)
 
 ```html
 <div class="alert alert-danger">This is an example message.</div>
 ```
 
-#### `\Sid\Flash\Formatter\TextFormatter`
+#### [`\Sid\Flash\Formatter\TextFormatter`](https://github.com/SidRoberts/flash/blob/master/src/Formatter/TextFormatter.php)
 
 ```
 [DANGER] This is an example message.
