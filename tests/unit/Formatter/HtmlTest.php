@@ -2,7 +2,9 @@
 
 namespace Sid\Flash\Tests\Unit\Formatter;
 
-class HtmlTest extends \Codeception\TestCase\Test
+use Codeception\TestCase\Test;
+
+class HtmlTest extends Test
 {
     public function testOutput()
     {

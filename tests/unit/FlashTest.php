@@ -2,11 +2,13 @@
 
 namespace Sid\Flash\Tests\Unit;
 
+use Codeception\TestCase\Test;
+
 use Sid\Flash\Flash;
 
 use Symfony\Component\HttpFoundation\Session\Session;
 
-class FlashTest extends \Codeception\TestCase\Test
+class FlashTest extends Test
 {
     public function testOutput()
     {

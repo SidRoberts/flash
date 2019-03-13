@@ -2,9 +2,11 @@
 
 namespace Sid\Flash\Tests\Unit;
 
+use Codeception\TestCase\Test;
+
 use Sid\Flash\MessageBag;
 
-class MessageBagTest extends \Codeception\TestCase\Test
+class MessageBagTest extends Test
 {
     public function testGetMessages()
     {

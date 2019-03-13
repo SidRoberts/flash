@@ -2,7 +2,9 @@
 
 namespace Sid\Flash\Tests\Unit\Formatter;
 
-class TextTest extends \Codeception\TestCase\Test
+use Codeception\TestCase\Test;
+
+class TextTest extends Test
 {
     public function testOutput()
     {
