@@ -4,11 +4,13 @@ namespace Sid\Flash\Tests\Unit\Formatter;
 
 use Codeception\TestCase\Test;
 
-class HtmlTest extends Test
+use Sid\Flash\Formatter\HtmlFormatter;
+
+class HtmlFormatterTest extends Test
 {
     public function testOutput()
     {
-        $formatter = new \Sid\Flash\Formatter\Html();
+        $formatter = new HtmlFormatter();
 
         $message = "Hello world";
 

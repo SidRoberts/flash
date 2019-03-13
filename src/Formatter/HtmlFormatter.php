@@ -6,7 +6,7 @@ use Sid\Flash\FormatterInterface;
 
 use InvalidArgumentException;
 
-class Html implements FormatterInterface
+class HtmlFormatter implements FormatterInterface
 {
     public function output(string $level, string $message) : string
     {

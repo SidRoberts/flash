@@ -5,6 +5,7 @@ namespace Sid\Flash\Tests\Unit;
 use Codeception\TestCase\Test;
 
 use Sid\Flash\Flash;
+use Sid\Flash\Formatter\TextFormatter;
 
 use Symfony\Component\HttpFoundation\Session\Session;
 
@@ -20,7 +21,7 @@ class FlashTest extends Test
 
 
         $session   = new Session();
-        $formatter = new \Sid\Flash\Formatter\Text();
+        $formatter = new TextFormatter();
 
         $flash = new Flash($session, $formatter);
 

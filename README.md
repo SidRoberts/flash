@@ -19,7 +19,7 @@ composer require sidroberts/flash
 
 ```php
 $session   = new \Symfony\Component\HttpFoundation\Session\Session();
-$formatter = new \Sid\Flash\Formatter\Text();
+$formatter = new \Sid\Flash\Formatter\TextFormatter();
 
 $flash = new \Sid\Flash\Flash($session, $formatter);
 ```
@@ -47,13 +47,13 @@ Formatters determine how messages are outputted. To create your own you must
 implement the `\Sid\Flash\FormatterInterface` interface. Currently, there are
 two formatters:
 
-#### `\Sid\Flash\Formatter\Html`
+#### `\Sid\Flash\Formatter\HtmlFormatter`
 
 ```html
 <div class="alert alert-danger">This is an example message.</div>
 ```
 
-#### `\Sid\Flash\Formatter\Text`
+#### `\Sid\Flash\Formatter\TextFormatter`
 
 ```
 [DANGER] This is an example message.

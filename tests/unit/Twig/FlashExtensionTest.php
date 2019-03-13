@@ -5,6 +5,7 @@ namespace Sid\Flash\Test\Unit\Twig;
 use Codeception\TestCase\Test;
 
 use Sid\Flash\Flash;
+use Sid\Flash\Formatter\HtmlFormatter;
 use Sid\Flash\Twig\FlashExtension;
 
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -15,9 +16,8 @@ class FlashExtensionTest extends Test
 {
     public function testExtension()
     {
-        $session = new Session();
-
-        $formatter = new \Sid\Flash\Formatter\Html();
+        $session   = new Session();
+        $formatter = new HtmlFormatter();
 
         $flash = new Flash(
             $session,
