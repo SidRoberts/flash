@@ -24,8 +24,8 @@ $formatter = new \Sid\Flash\Formatter\TextFormatter();
 $flash = new \Sid\Flash\Flash($session, $formatter);
 ```
 
-To add a message to the Flash, use any of the following methods: `danger()`,
-`success()`, `info()` or `warning()`:
+To add a message to the Flash, use any of the following methods:
+`danger()`, `success()`, `info()` or `warning()`:
 
 ```php
 $flash->danger(
@@ -43,8 +43,8 @@ echo $flash->output();
 
 ### Formatters
 
-Formatters determine how messages are outputted. To create your own you must
-implement [`\Sid\Flash\FormatterInterface`](https://github.com/SidRoberts/flash/blob/master/src/FormatterInterface.php).
+Formatters determine how messages are outputted.
+To create your own you must implement [`\Sid\Flash\FormatterInterface`](https://github.com/SidRoberts/flash/blob/master/src/FormatterInterface.php).
 Currently, there are two formatters:
 
 #### [`\Sid\Flash\Formatter\HtmlFormatter`](https://github.com/SidRoberts/flash/blob/master/src/Formatter/HtmlFormatter.php)
