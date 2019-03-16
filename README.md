@@ -15,50 +15,6 @@ composer require sidroberts/flash
 
 
 
-## Usage
+## Documentation
 
-```php
-use Sid\Flash\Flash;
-use Sid\Flash\Formatter\TextFormatter;
-use Symfony\Component\HttpFoundation\Session\Session;
-
-$session   = new Session();
-$formatter = new TextFormatter();
-
-$flash = new Flash($session, $formatter);
-```
-
-To add a message to the Flash, use any of the following methods:
-`danger()`, `success()`, `info()` or `warning()`:
-
-```php
-$flash->danger(
-    "This is an example message."
-);
-```
-
-And now you can output the messages in your view:
-
-```php
-echo $flash->output();
-```
-
-
-
-### Formatters
-
-Formatters determine how messages are outputted.
-To create your own you must implement [`\Sid\Flash\FormatterInterface`](https://github.com/SidRoberts/flash/blob/master/src/FormatterInterface.php).
-Currently, there are two formatters:
-
-#### [`\Sid\Flash\Formatter\HtmlFormatter`](https://github.com/SidRoberts/flash/blob/master/src/Formatter/HtmlFormatter.php)
-
-```html
-<div class="alert alert-danger">This is an example message.</div>
-```
-
-#### [`\Sid\Flash\Formatter\TextFormatter`](https://github.com/SidRoberts/flash/blob/master/src/Formatter/TextFormatter.php)
-
-```
-[DANGER] This is an example message.
-```
+See the [Wiki](https://github.com/SidRoberts/flash/wiki).
