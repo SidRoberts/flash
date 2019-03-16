@@ -18,10 +18,14 @@ composer require sidroberts/flash
 ## Usage
 
 ```php
-$session   = new \Symfony\Component\HttpFoundation\Session\Session();
-$formatter = new \Sid\Flash\Formatter\TextFormatter();
+use Sid\Flash\Flash;
+use Sid\Flash\Formatter\TextFormatter;
+use Symfony\Component\HttpFoundation\Session\Session;
 
-$flash = new \Sid\Flash\Flash($session, $formatter);
+$session   = new Session();
+$formatter = new TextFormatter();
+
+$flash = new Flash($session, $formatter);
 ```
 
 To add a message to the Flash, use any of the following methods:
