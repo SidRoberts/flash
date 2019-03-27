@@ -2,8 +2,13 @@
 
 Store alert messages in the session.
 
-[![Build Status](https://travis-ci.org/SidRoberts/flash.svg?branch=master)](https://travis-ci.org/SidRoberts/flash)
-[![GitHub tag](https://img.shields.io/github/tag/sidroberts/flash.svg?maxAge=2592000)]()
+[![Build Status](https://img.shields.io/travis/SidRoberts/flash/3.0.x.svg?style=for-the-badge)](https://travis-ci.org/SidRoberts/flash)
+[![GitHub release](https://img.shields.io/github/release/SidRoberts/flash.svg?style=for-the-badge)]()
+
+[![License](https://img.shields.io/github/license/SidRoberts/flash.svg?style=for-the-badge)]()
+
+[![GitHub issues](https://img.shields.io/github/issues-raw/SidRoberts/flash.svg?style=for-the-badge)]()
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/SidRoberts/flash.svg?style=for-the-badge)]()
 
 
 
