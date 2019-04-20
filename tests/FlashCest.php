@@ -1,17 +1,14 @@
 <?php
 
-namespace Sid\Flash\Tests\Unit;
-
-use Codeception\TestCase\Test;
+namespace Tests;
 
 use Sid\Flash\Flash;
 use Sid\Flash\Formatter\TextFormatter;
-
 use Symfony\Component\HttpFoundation\Session\Session;
 
-class FlashTest extends Test
+class FlashCest
 {
-    public function testOutput()
+    public function output(UnitTester $I)
     {
         $message1 = "sample message 1";
         $message2 = "sample message 2";
@@ -41,7 +38,7 @@ class FlashTest extends Test
         $expected .= "[INFO] "    . $message3 . PHP_EOL;
         $expected .= "[WARNING] " . $message4 . PHP_EOL;
 
-        $this->assertEquals(
+        $I->assertEquals(
             $expected,
             $flash->output()
         );

@@ -1,21 +1,22 @@
 <?php
 
-namespace Sid\Flash\Tests\Unit\Formatter;
-
-use Codeception\TestCase\Test;
+namespace Tests\Formatter;
 
 use Sid\Flash\Formatter\TextFormatter;
+use Tests\UnitTester;
 
-class TextTest extends Test
+class TextCest
 {
-    public function testOutput()
+    public function output(UnitTester $I)
     {
         $formatter = new TextFormatter();
 
         $message = "Hello world";
 
-        $this->assertEquals(
-            "[DANGER] " . $message,
+        $expected = "[DANGER] " . $message;
+
+        $I->assertEquals(
+            $expected,
             $formatter->output("danger", $message)
         );
     }

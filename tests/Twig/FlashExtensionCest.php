@@ -1,20 +1,17 @@
 <?php
 
-namespace Sid\Flash\Test\Unit\Twig;
-
-use Codeception\TestCase\Test;
+namespace Tests\Twig;
 
 use Sid\Flash\Flash;
 use Sid\Flash\Formatter\HtmlFormatter;
 use Sid\Flash\Twig\FlashExtension;
-
 use Symfony\Component\HttpFoundation\Session\Session;
-
+use Tests\UnitTester;
 use Twig\Loader\ArrayLoader;
 
-class FlashExtensionTest extends Test
+class FlashExtensionCest
 {
-    public function testExtension()
+    public function extension(UnitTester $I)
     {
         $session   = new Session();
         $formatter = new HtmlFormatter();
@@ -48,12 +45,12 @@ class FlashExtensionTest extends Test
 
 
 
+        $expected = "<div class=\"alert alert-danger\">danger message</div>" . PHP_EOL;
+
         $actual = $twig->render("template");
 
-
-
-        $this->assertEquals(
-            "<div class=\"alert alert-danger\">danger message</div>" . PHP_EOL,
+        $I->assertEquals(
+            $expected,
             $actual
         );
     }
