@@ -25,3 +25,10 @@ composer require sidroberts/flash
 ## Documentation
 
 See the [Wiki](https://github.com/SidRoberts/flash/wiki).
+
+
+
+## License
+
+Licensed under the MIT License.
+© [Sid Roberts](https://github.com/SidRoberts)
