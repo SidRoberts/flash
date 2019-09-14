@@ -30,7 +30,7 @@ class FlashExtension extends AbstractExtension
                 function () : string {
                     return $this->flash->output();
                 }
-            )
+            ),
         ];
     }
 
