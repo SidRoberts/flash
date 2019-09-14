@@ -2,10 +2,6 @@
 
 namespace Sid\Flash;
 
-use Sid\Flash\FormatterInterface;
-
-use Symfony\Component\HttpFoundation\Session\Session;
-
 interface FlashInterface
 {
     public function success(string $message);

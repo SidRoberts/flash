@@ -2,8 +2,6 @@
 
 namespace Sid\Flash;
 
-use Sid\Flash\FormatterInterface;
-
 use Symfony\Component\HttpFoundation\Session\Session;
 
 class Flash implements FlashInterface
